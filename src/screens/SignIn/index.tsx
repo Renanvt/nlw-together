@@ -13,9 +13,24 @@ export function SignIn() {
     const [text, setText] = useState('Rodrigo');
 
     return (
-        //Conceito de propriedade
+        //View é um elemento para criar grupos de componentes, para movimenta-los, organiza-los na interface
         <View style={styles.container}>
-            <Image source={IllustrationImg} />
+            <Image source={IllustrationImg}
+                style={styles.image} />
+
+            <View style={styles.content}>
+                <Text style={styles.tittle}>
+                    Organize {`\n`}
+                    suas jogatinas {`\n`}
+                    facilmente
+                    
+                </Text>
+
+                <Text>
+                    Crie grupos para jogar seus games {`\n`}
+                    favoritos com seus amigos
+                </Text>
+            </View>
         </View>
     );
 }
