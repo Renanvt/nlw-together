@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput } from 'react-native';
+import {
+    View,
+    Text,
+    Image
+} from 'react-native';
 
+import IllustrationImg from '../../assets/illustration.png'
 import { styles } from './styles'
 export function SignIn() {
     //[ nome_stado, funcao_atualizar_estado]
@@ -10,17 +15,7 @@ export function SignIn() {
     return (
         //Conceito de propriedade
         <View style={styles.container}>
-            <Text>
-                Hello World, NLW Together
-            </Text>
-            <TextInput
-                style={styles.input}
-                onChangeText={setText}
-                //onChangeText={(value) => console.log(value)} //Observa o textinput e toda vez que um valor muda, mostra oque mudou
-            />
-            <Text>
-                Você digitou: ... {text}
-            </Text>
-        </View >
+            <Image source={IllustrationImg} />
+        </View>
     );
 }
