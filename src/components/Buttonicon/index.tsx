@@ -18,11 +18,12 @@ type Props = TouchableOpacityProps & {
     title: string;
 
 }
-export function ButtonIcon({title, activeOpacity}: Props) {
+//Todo o resto que estiver de propriedade, pega, recupera e passa para TouchableOpacity
+export function ButtonIcon({title, ...rest}: Props) {
     return (
         <TouchableOpacity 
         style={styles.container}
-        activeOpacity={activeOpacity}
+        {...rest}
         >
             <View style={styles.iconWrapper}>
                 <Image source={DiscordImg} style={styles.icon} />
