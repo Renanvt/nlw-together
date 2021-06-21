@@ -5,7 +5,7 @@ import { styles } from './styles'
 export function SignIn() {
   return (
       //Conceito de propriedade
-    <View style={{ flex:1, backgroundColor: 'red', alignItems: 'center', justifyContent: 'center'}}>
+    <View style={styles.container}>
       <Text>
         Hello World, NLW Together
       </Text>
