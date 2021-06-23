@@ -5,8 +5,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1, //Ocupa toda a tela
         justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: theme.colors.secondary100
+        alignItems: 'center'
     },
     content: {
         marginTop: -40,
