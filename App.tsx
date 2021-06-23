@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { StatusBar } from 'react-native';
 import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
 import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhani';
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import { SignIn } from './src/screens/SignIn';
-
+import { Background } from './src/components/Background'
 export default function App() {
   const [fontsLoaded] = useFonts({ //Carrega as fontes
     Inter_400Regular,
@@ -20,7 +20,7 @@ export default function App() {
   }
   //<> -> fragment, empacota todos os componentes
   return (
-    <>
+    <Background>
       <StatusBar
         //Personaliza a barra de status
         barStyle="light-content" //Deixa a barra de status como branca
@@ -29,6 +29,6 @@ export default function App() {
       />
 
       <SignIn />
-    </>
+    </Background>
   );
 }
