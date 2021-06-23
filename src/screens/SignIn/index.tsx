@@ -7,8 +7,11 @@ import {
 } from 'react-native';
 
 import { ButtonIcon } from '../../components/Buttonicon';
-import IllustrationImg from '../../assets/illustration.png'
 import { styles } from './styles'
+
+import IllustrationImg from '../../assets/illustration.png'
+
+
 export function SignIn() {
     //[ nome_stado, funcao_atualizar_estado]
     //useState('valor_inicial')
@@ -23,7 +26,9 @@ export function SignIn() {
                 backgroundColor="transparent"
                 translucent //conteúdo cola no limite da tela
             />
-            <Image source={IllustrationImg}
+
+            <Image
+                source={IllustrationImg}
                 style={styles.image}
                 resizeMode="stretch" //Garanti a imagem ajustada ao tamanho definido
             />
@@ -33,7 +38,6 @@ export function SignIn() {
                     Organize {`\n`}
                     suas jogatinas {`\n`}
                     facilmente
-
                 </Text>
 
                 <Text style={styles.subtitle}>
@@ -43,7 +47,8 @@ export function SignIn() {
 
                 <ButtonIcon
                     title="Entrar com Discord"
-                    activeOpacity={0.7} />
+                    activeOpacity={0.7} 
+                />
             </View>
         </View>
     );
