@@ -41,7 +41,7 @@ export function SignIn() {
                 </Text>
 
                 <Text style={styles.subtitle}>
-                    Crie grupos para jogar seus games {`\n`}
+                    Crie grupos para jogar seus games {'\n'}
                     favoritos com seus amigos
                 </Text>
 
