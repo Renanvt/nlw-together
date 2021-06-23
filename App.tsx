@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
+import { StatusBar } from 'react-native';
 import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
 import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhani';
 import { useFonts } from 'expo-font';
@@ -18,7 +18,17 @@ export default function App() {
     //Enquanto as fontes não carregarem, deixa a tela de splash em foco
     return <AppLoading /> //Segura a tela de splash
   }
+  //<> -> fragment, empacota todos os componentes
   return (
-    <SignIn />
+    <>
+      <StatusBar
+        //Personaliza a barra de status
+        barStyle="light-content" //Deixa a barra de status como branca
+        backgroundColor="transparent"
+        translucent //conteúdo cola no limite da tela
+      />
+
+      <SignIn />
+    </>
   );
 }

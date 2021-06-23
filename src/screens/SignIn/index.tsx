@@ -2,8 +2,7 @@ import React from 'react';
 import {
     View,
     Text,
-    Image,
-    StatusBar
+    Image
 } from 'react-native';
 
 import { ButtonIcon } from '../../components/Buttonicon';
@@ -20,13 +19,7 @@ export function SignIn() {
     return (
         //View é um elemento para criar grupos de componentes, para movimenta-los, organiza-los na interface
         <View style={styles.container}>
-            <StatusBar
-                //Personaliza a barra de status
-                barStyle="light-content" //Deixa a barra de status como branca
-                backgroundColor="transparent"
-                translucent //conteúdo cola no limite da tela
-            />
-
+           
             <Image
                 source={IllustrationImg}
                 style={styles.image}
