@@ -5,6 +5,7 @@ import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhan
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import { Routes } from './src/routes';
+import { Background } from '../components/Background'
 
 export default function App() {
   const [fontsLoaded] = useFonts({ //Carrega as fontes
@@ -20,7 +21,7 @@ export default function App() {
   }
   //<> -> fragment, empacota todos os componentes
   return (
-    <>
+    <Background>
       <StatusBar
         //Personaliza a barra de status
         barStyle="light-content" //Deixa a barra de status como branca
@@ -29,6 +30,6 @@ export default function App() {
       />
 
       <Routes />
-    </>
+    </Background>
   );
 }

@@ -8,7 +8,14 @@ const {Navigator, Screen} = createStackNavigator();
 
 export function AuthRoutes = (){
     return(
-        <Navigator>
+        <Navigator
+            headerMode="none"
+            screenOption={{
+                cardStyle: {
+                    backgroundColor: 'transparent'
+                }
+            }}
+        >
             <Screen
                 name="SignIn"
                 componente={SignIn}
