@@ -4,17 +4,18 @@ import {
     Text,
     Image
 } from 'react-native';
-
 import { ButtonIcon } from '../../components/Buttonicon';
 import { styles } from './styles'
-
 import IllustrationImg from '../../assets/illustration.png'
+import { NavigationContainer } from 'react-navigation/native';
 
 
 export function SignIn() {
-    //[ nome_stado, funcao_atualizar_estado]
-    //useState('valor_inicial')
+    const navigation = useNavigation();
 
+    function handleSignIn(){
+        navigation.navigate('Home');
+    }
 
     return (
         //View é um elemento para criar grupos de componentes, para movimenta-los, organiza-los na interface
@@ -41,6 +42,7 @@ export function SignIn() {
                 <ButtonIcon
                     title="Entrar com Discord"
                     activeOpacity={0.7} 
+                    onPress={handleSignIn}
                 />
             </View>
         </View>
