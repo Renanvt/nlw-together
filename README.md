@@ -1,6 +1,6 @@
 # nlw-together
 <h1 align="center">
-  <img alt="GamePlay" height="80" title="Plant Manager" src=".github/logo.png" />
+  <img alt="GamePlay" height="80" title="Plant Manager" src="img/logo.png" />
 </h1>
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
 
-![cover](.github/cover.png?style=flat)
+![cover](img/readme-1.png?style=flat)
 
 
 ## 💻 Projeto
