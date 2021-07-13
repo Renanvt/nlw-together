@@ -7,6 +7,8 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=E51C44&labelColor=0A1033">
 
 
+</p>
+
 
 ![cover](img/readme-1.png?style=flat)
 
